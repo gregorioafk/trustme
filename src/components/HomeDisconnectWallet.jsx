@@ -1,5 +1,4 @@
 import React from "react";
-import propTypes from "prop-types";
 import styled from "styled-components";
 
 // const WrapperHomeDW = styled.div`
@@ -27,7 +26,6 @@ const ButtonConnect = styled.button`
   }
 `;
 
-// eslint-disable-next-line no-unused-vars
 export const HomeDisconnectWallet = ({ handleConnectWallet }) => {
   return (
     <div className="color text-zinc-400 flex flex-col justify-center items-center h-screen ">
@@ -37,8 +35,4 @@ export const HomeDisconnectWallet = ({ handleConnectWallet }) => {
       </ButtonConnect>
     </div>
   );
-};
-
-HomeDisconnectWallet.propTypes = {
-  handleConnectWallet: propTypes.func,
 };

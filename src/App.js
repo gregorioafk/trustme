@@ -5,11 +5,14 @@ import { InstallMetamsk } from "./components/InstallMetamask";
 import { useConnectWallet } from "./hooks/useConnectWallet";
 import { HomeDisconnectWallet } from "./components/HomeDisconnectWallet";
 import { HomePage } from "./components/HomePage";
-import { Header } from "./components/Header";
+import { Navbar } from "./components/Navbar";
+import { Sidebar } from "./components/Sidebar/index";
 
 function App() {
   const { ethereum } = window;
   const { accountAddress, handleConnectWallet } = useConnectWallet();
+
+  const accounts = [];
   return (
     <>
       <div className="bg-slate-900 h-screen">
@@ -19,8 +22,13 @@ function App() {
         )}
         {accountAddress && (
           <>
-            <Header />
-            <HomePage accountAddress={accountAddress} ethereum={ethereum} />
+            <Navbar />
+            <Sidebar />
+            <HomePage
+              accountAddress={accountAddress}
+              ethereum={ethereum}
+              accounts={accounts}
+            />
           </>
         )}
 

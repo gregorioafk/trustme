@@ -1,10 +1,9 @@
 import React from "react";
 import { FormProfile } from "./Form/FormProfile";
-import * as web3 from "web3";
+// import * as web3 from "web3";
 
 // eslint-disable-next-line no-unused-vars
-export const HomePage = ({ accountAddress, ethereum }) => {
-  console.log(web3);
+export const HomePage = ({ accountAddress, ethereum, accounts }) => {
   return (
     <div className="flex flex-col justify-center items-center 56">
       <div className="flex flex-col mt-16">

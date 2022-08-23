@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = () => (
+export const Navbar = () => (
   <div className="relative bg-slate-800">
     <div className="max-w-7xl mx-auto px-4 sm:px-6">
       <div className="flex justify-between items-center py-3 md:justify-start md:space-x-8">

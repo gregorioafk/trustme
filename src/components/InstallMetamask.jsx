@@ -1,14 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const WrapperHome = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-`;
-
 const Button = styled.button`
   background-color: #f7f7f7;
   border: 1px solid #f7f7f7;
@@ -26,7 +18,8 @@ const Button = styled.button`
 `;
 
 export const InstallMetamsk = () => (
-  <WrapperHome>
+  <div className="color text-zinc-400 flex flex-col justify-center items-center h-screen ">
+    Still not connect to metamask
     <h1>Install Metamask</h1>
     <p>Please install Metamask to use this app.</p>
     <Button
@@ -39,5 +32,5 @@ export const InstallMetamsk = () => (
       }>
       Install MetaMask now!
     </Button>
-  </WrapperHome>
+  </div>
 );
